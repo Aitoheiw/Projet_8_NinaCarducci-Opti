@@ -159,6 +159,8 @@ body {
   margin: auto;
   background-color: #a8d5d8;
   position: relative;
+  width: 100%;
+  min-height: 575px;
 }
 #services .container::before {
   content: " ";
