@@ -71,7 +71,7 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./assets/style.css" /></noscript>
-    <title>Portifolio Nina Carducci</title>
+    <title>Portfolio Nina Carducci</title>
 
     <script type="application/ld+json">
       {
@@ -90,10 +90,7 @@
         },
         "openingHours": "Mo-Fr 10:00-19:00",
         "priceRange": "€€",
-        "sameAs": [
-          "https://www.instagram.com/nina.photo",
-          "https://www.facebook.com/nina.photo"
-        ]
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo"]
       }
     </script>
     <script
@@ -102,7 +99,7 @@
     ></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script src="./assets/maugallery.min.js" defer></script>
+    <script src="./assets/maugallery.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
   </head>
 
@@ -203,7 +200,7 @@
           src="./assets/images/nina-opti.webp"
           alt="Photo de Nina Carducci"
           loading="lazy"
-          width="100%"
+          id="nina-photo"
         />
       </div>
       <div id="about-me">
@@ -246,7 +243,7 @@
           <img
             data-gallery-tag="Entreprises"
             class="gallery-item"
-            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-otpi.webp"
+            src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash-opti.webp"
             alt="Photo d'une femme dans un bureau"
             loading="lazy"
           />
@@ -274,7 +271,7 @@
           <img
             data-gallery-tag="Portrait"
             class="gallery-item"
-            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-otpi.webp"
+            src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash-opti.webp"
             alt="Photo d'une femme dérrière un grillage"
             loading="lazy"
           />
@@ -297,12 +294,12 @@
       <div class="quote">
         <figure>
           <blockquote>
-            <h2 class="quote__text">
+            <p class="quote__text">
               Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
               qu’un fait est traduit en photo, il cesse d’être un fait pour
               devenir une opinion. L’inexactitude n’existe pas en photographie.
               Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-            </h2>
+            </p>
           </blockquote>
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
@@ -353,24 +350,24 @@
         </div>
       </div>
     </section>
-    <section class="quote">
+    <div class="quote">
       <figure>
         <blockquote>
-          <h2 class="quote__text">
+          <p class="quote__text">
             De manière inconsciente, je crois, je guette un regard, une
             expression, des traits ou une nostalgie capable de résumer ou plus
             exactement de révéler une vie
-          </h2>
+          </p>
         </blockquote>
         <figcaption class="quote__author">- Richard Avedon</figcaption>
       </figure>
-    </section>
+    </div>
     <section id="contact">
       <div class="container">
         <div class="form-container">
           <h2>Une question ? Une demande de devis ?</h2>
           <p>
-            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+            N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures
           </p>
           <form action="#" method="post">
             <label for="nom">Nom</label>
@@ -392,8 +389,7 @@
             src="./assets/images/camera-opti.webp"
             alt="Photo d'une camera"
             loading="lazy"
-            width="100%"
-            height="auto"
+            id="camera-photo"
           />
         </div>
       </div>

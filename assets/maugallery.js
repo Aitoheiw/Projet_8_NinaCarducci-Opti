@@ -74,7 +74,7 @@
     wrapItemInColumn(element, columns) {
       if (columns.constructor === Number) {
         element.wrap(
-          `<div class='item-column col-${Math.ceil(12 / columns)}'></div>`
+          `<div class='item-column mb-4 col-${Math.ceil(12 / columns)}'></div>`
         );
       } else if (columns.constructor === Object) {
         var columnClasses = "";
@@ -93,7 +93,7 @@
         if (columns.xl) {
           columnClasses += ` col-xl-${Math.ceil(12 / columns.xl)}`;
         }
-        element.wrap(`<div class='item-column ${columnClasses}'></div>`);
+        element.wrap(`<div class='item-column mb-4${columnClasses}'></div>`);
       } else {
         console.error(
           `Columns should be defined as numbers or objects. ${typeof columns} is not supported.`
@@ -109,10 +109,15 @@
       }
     },
     openLightBox(element, lightboxId) {
-      $(`#${lightboxId}`)
-        .find(".lightboxImage")
-        .attr("src", element.attr("src"));
-      $(`#${lightboxId}`).modal("toggle");
+      const modalElement = document.getElementById(lightboxId);
+      const modalImage = modalElement.querySelector(".lightboxImage");
+
+      // Change la source de l'image
+      modalImage.src = element.attr("src");
+
+      // Crée une instance de Modal Bootstrap 5 et affiche-la
+      const modalInstance = new bootstrap.Modal(modalElement);
+      modalInstance.toggle();
     },
     prevImage() {
       let activeImage = null;

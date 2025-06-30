@@ -102,7 +102,7 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #beb45a;
+  background-color: #5e5a26;
   border-radius: 0;
 }
 .nav-pills .nav-link {
@@ -356,4 +356,10 @@ input[type="submit"] {
   .picture {
     width: 80%;
   }
+}
+
+#nina-photo,
+#camera-photo {
+  width: 100%;
+  height: auto;
 }
