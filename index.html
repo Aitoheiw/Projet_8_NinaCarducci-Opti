@@ -66,7 +66,7 @@
 
     <link
       rel="preload"
-      href="./assets/style.css"
+      href="./assets/style.min.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
@@ -90,7 +90,30 @@
         },
         "openingHours": "Mo-Fr 10:00-19:00",
         "priceRange": "€€",
-        "sameAs": ["https://www.instagram.com/ninacarducci.photo"]
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo"],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Shooting photo",
+            "price": "350",
+            "priceCurrency": "EUR",
+            "description": "Shooting photo demi-journée - Matériel et déplacement inclus"
+          },
+          {
+            "@type": "Offer",
+            "name": "Retouches photo",
+            "price": "50",
+            "priceCurrency": "EUR",
+            "description": "Retouche professionnelle par photo (2 allers-retours inclus)"
+          },
+          {
+            "@type": "Offer",
+            "name": "Album photos",
+            "price": "400",
+            "priceCurrency": "EUR",
+            "description": "Album photo A4 de 30 pages recto/verso"
+          }
+        ]
       }
     </script>
     <script
@@ -99,7 +122,7 @@
     ></script>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
-    <script src="./assets/maugallery.js" defer></script>
+    <script src="./assets/maugallery.min.js" defer></script>
     <script src="./assets/scripts.js" defer></script>
   </head>
 
