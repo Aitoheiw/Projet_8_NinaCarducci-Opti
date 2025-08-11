@@ -363,3 +363,16 @@ input[type="submit"] {
   width: 100%;
   height: auto;
 }
+
+.carrousel-accessibility {
+  color: #ffffff;
+  background-color: #000000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1 !important;
+}
