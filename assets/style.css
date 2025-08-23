@@ -385,3 +385,25 @@ input[type="submit"] {
   width: 100%;
   height: auto;
 }
+.carousel-item.active img {
+  display: block;
+}
+
+/* Empêche les reflows coûteux sur le carrousel */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  contain: layout paint;
+}
+
+/* Assure une hauteur minimale en attendant l'image (évite les sauts) */
+.carousel-item {
+  min-height: 40vh;
+}
+
+/* L'image occupe l'espace sans changer la hauteur */
+.carousel-item img {
+  display: block;
+  width: 100%;
+
+}
